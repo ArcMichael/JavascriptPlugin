@@ -1,20 +1,21 @@
 ;(function  ($) {
-	$.tools = function  (el,options) {
+	$.tools = function  (el,opts) {
 		var $tools = $(el);
 		$tools.methods = {
-			options:{
+			opts:{
 				device:['768','992','1200']
 			},
 			init:function  () {
 				$tools.methods.run();
 			},
 			run:function  () {
-				console.log('run');
+				try{var o = {f:'left'};new $tools.marquee($('[data-action=marquee]'),o)}catch(e){console.log('catch');};
 			}
 		}
 
-		$tools.marquee = function  (el,options) {
+		$tools.marquee = function  (el,opts) {
 			this.el = $(el);
+			this.float
 		}
 
 		return $tools;
