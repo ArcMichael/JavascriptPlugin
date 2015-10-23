@@ -25,9 +25,11 @@
 			},
 			run:function  () {
 				try{new $tools.marquee($('[data-action=Marquee]'),{isEqual:'false',direction:'left'})}catch(e){console.log('miss function && options is mistake')};
+				console.log('<style type="text/css">\n\t.exampleMarquee{\n\t\twidth: 100%;\n\t\theight: 30px;\n\t\toverflow: hidden;\n\t\tbackground-color: #ccc;\n\t\t}\n\t.exampleMarquee > *{\n\t\tlist-style-type: none;\n\t\tpadding: 0px;\n\t\tmargin: 0px;\n\t}\n\t.exampleMarquee > ul li{\n\t\tfloat: left;\n\t\tpadding: 0 10px;\n\t\tline-height: 30px;\n\t}\n</style>');
+				console.log('<div class="exampleMarquee" data-action="Marquee">\n\t<ul>\n\t\t<li>postdicroticteratogenousluxuriantllej</li>\n\t\t<li>ducatocrystalloticillate</li>\n\t</ul>\n</div>')
+
 			}
 		}
-		
 		// <div class="exampleMarquee" data-action="Marquee">
 		// 	<ul>
 		// 		<li>postdicroticteratogenousluxuriantllej</li>
