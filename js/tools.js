@@ -24,7 +24,7 @@
 				}
 			},
 			run:function  () {
-				try{new $tools.marquee($('[data-action=Marquee]'),{isEqual:false,direction:'left'})}catch(e){console.log('miss function && options is mistake')};
+				try{new $tools.marquee($('[data-action=Marquee]'),{isEqual:'false',direction:'left'})}catch(e){console.log('miss function && options is mistake')};
 			}
 		}
 		
@@ -53,7 +53,7 @@
 			 * @type {scrollDelay:20} 时长
 			 */
 			var defaults = {
-				isEqual: opts.isEqual == null ? true : opts.isEqual,
+				isEqual: opts.isEqual == 'false'||opts.isEqual == false ? false : true,
 				loop:opts.loop || 0,
 				direction:opts.direction || "left",
 				scrollAmount:opts.scrollAmount || 1,
