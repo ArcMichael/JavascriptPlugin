@@ -53,7 +53,7 @@
 			 * @type {scrollDelay:20} 时长
 			 */
 			var defaults = {
-				isEqual: opts.isEqual == 'false'||opts.isEqual == false ? false : true,
+				isEqual: opts.isEqual == 'false' || opts.isEqual == false ? false : true,
 				loop:opts.loop || 0,
 				direction:opts.direction || "left",
 				scrollAmount:opts.scrollAmount || 1,
