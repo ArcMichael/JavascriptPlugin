@@ -24,7 +24,7 @@
 				}
 			},
 			run:function  () {
-				try{new $tools.marquee($('[data-action=Marquee]'),{isEqual:false,direction:'top'})}catch(e){};
+				try{new $tools.marquee($('[data-action=Marquee]'),{isEqual:false,direction:'left'})}catch(e){console.log('miss function && options is mistake')};
 			}
 		}
 		
@@ -48,7 +48,7 @@
 			 * [defaults 参数设置]
 			 * @type {isEqual:true||false} 滚动元素长宽是否相等
 			 * @type {loop:0} 重复次数，为无限
-			 * @type {direction:left} 滚动方向，默认为left
+			 * @type {direction:left} 滚动方向，默认为left [top,right,down,left]
 			 * @type {scrollAmount:1} 步长
 			 * @type {scrollDelay:20} 时长
 			 */
